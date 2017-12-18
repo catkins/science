@@ -18,7 +18,7 @@ type Experiment struct {
 type Comparer func(a, b interface{}) bool
 
 // DefaultComparer is the default Comparer provided when creating a new Experiment via NewExperiment
-var DefaultComparer Comparer = SimpleEqualityCompare
+var DefaultComparer = SimpleEqualityCompare
 
 // Reporter is used to report the results of experiment runs
 // eg. printing out to logs, or sending metrics to statsd or prometheus
